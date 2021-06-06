@@ -41,8 +41,8 @@ function Circle(x, y, radius, dx, dy) {
 
 minRadius = 30
 maxRadius = 30
-maxSpeedX = 1
-maxSpeedY = 1
+dxMax = 1
+dyMax = 1
 numOfCircles = 50
 
 let circleArray = []
@@ -51,8 +51,8 @@ for (i = 0; i < numOfCircles; i++) {
     radius = minRadius + Math.random() * (maxRadius - minRadius)
     x = radius + Math.random() * (window.innerWidth - 2 * radius)
     y = radius + Math.random() * (window.innerHeight - 2 * radius)
-    dx = ( -0.5 + Math.random() ) * 2 * maxSpeedX
-    dy = ( -0.5 + Math.random() ) * 2 * maxSpeedY
+    dx = ( -0.5 + Math.random() ) * 2 * dxMax
+    dy = ( -0.5 + Math.random() ) * 2 * dyMax
     circleArray.push(new Circle(x, y, radius, dx, dy))
 }
 
