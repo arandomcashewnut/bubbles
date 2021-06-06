@@ -58,8 +58,6 @@ for (i = 0; i < numOfCircles; i++) {
 
 function animate() {
     requestAnimationFrame(animate)
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
     // c.fillStyle = 'rgba(255, 255, 255, 0.1)'
     // c.fillRect (0, 0, innerWidth, innerHeight)
     c.clearRect (0, 0, canvas.width, canvas.height)
